@@ -7,7 +7,7 @@ describe 'Feature Test: Category', :type => :feature do
       visit category_path(@category)
     end
 
-    it "Lists Category Title" do
+    it "Lists Category Name" do
       expect(page).to have_content @category.name
     end
     it "lists all of the items in that category" do

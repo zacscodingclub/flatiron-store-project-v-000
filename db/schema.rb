@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(version: 20160614152309) do
 
   create_table "carts", force: :cascade do |t|
     t.integer  "user_id"
-    t.boolean  "submitted",  default: false
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.string   "submitted"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_index "carts", ["user_id"], name: "index_carts_on_user_id"
